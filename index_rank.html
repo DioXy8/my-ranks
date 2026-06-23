@@ -4,286 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DioXy - Peak Ranks</title>
+<title>DioXy - Ranks</title>
 
+<link rel="stylesheet" href="ranks.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Inter,sans-serif;
-    background: radial-gradient(circle at top,#0f172a,#050814);
-    color:#e2e8f0;
-    min-height:100vh;
-    padding:50px 20px;
-}
-
-/* HEADER */
-.header{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.header h1{
-    font-size:3.8rem;
-    font-weight:800;
-    letter-spacing:-2px;
-}
-
-.subtitle{
-    color:#94a3b8;
-    margin-top:8px;
-}
-
-/* GRID */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-    max-width:1000px;
-    margin:auto;
-}
-
-/* CARD */
-.card{
-    background:rgba(30,41,59,.85);
-    border:1px solid #263244;
-    border-radius:18px;
-    padding:28px;
-    min-height:240px;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-
-    transition:.2s;
-}
-
-.card:hover{
-    transform:translateY(-4px);
-    border-color:#3b82f6;
-}
-
-/* GAME HEADER */
-.game-header{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:12px;
-}
-
-.game-logo{
-    width:70px;
-    height:70px;
-    object-fit:contain;
-}
-
-.game-name{
-    font-size:1.05rem;
-    font-weight:600;
-    color:white;
-}
-
-/* RANK COLORS */
-.rank{
-    font-size:1.8rem;
-    font-weight:800;
-    margin-top:18px;
-    margin-bottom:12px;
-}
-
-.lol{color:#60a5fa;}
-.tft{color:#c084fc;}
-.valorant{color:#22c55e;}
-.pokemon{color:#facc15;}
-.splatoon{color:#38bdf8;}
-.cr{color:#fb923c;}
-.fn{color:#ef4444;}
-
-/* LINKS */
-.profile-link{
-    margin-top:10px;
-    color:#94a3b8;
-    text-decoration:none;
-    font-size:.9rem;
-}
-
-.profile-link:hover{
-    color:white;
-}
-
-/* ACCOUNTS */
-.accounts{
-    max-width:1000px;
-    margin:40px auto 0;
-    background:rgba(30,41,59,.85);
-    border:1px solid #263244;
-    border-radius:18px;
-    padding:22px;
-}
-
-.accounts h2{
-    margin-bottom:18px;
-}
-
-.account{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:12px 0;
-    border-bottom:1px solid #263244;
-}
-
-.account:last-child{
-    border-bottom:none;
-}
-
-.account-logo{
-    width:26px;
-    height:26px;
-    object-fit:contain;
-}
-
-.label{
-    width:130px;
-    color:#94a3b8;
-    font-weight:600;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    margin-top:30px;
-    color:#64748b;
-    font-size:.9rem;
-}
-
-.card:last-child{
-    grid-column:1 / span 2;
-    width:50%;
-    justify-self:center;
-} 
-
-/* MOBILE */
-@media(max-width:800px){
-    .grid{
-        grid-template-columns:1fr;
-    }
-
-    .header h1{
-        font-size:2.7rem;
-    }
-}
-
-</style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>DioXy</h1>
-    <div class="subtitle">Here is all my peak across every game I play(ed)</div>
-</div>
+<div class="container">
 
-<div class="grid">
+    <a class="back" href="index.html">← Home</a>
 
-    <div class="card">
-        <div class="game-header">
-            <img src="lol-league-of-Legends-logo-3.png" class="game-logo">
-            <div class="game-name">League of Legends</div>
+    <h1>My Peak Ranks</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="lol-league-of-Legends-logo-3.png">
+            <div class="name">League of Legends</div>
+            <div class="rank lol">Diamond II</div>
+            <a href="https://dpm.lol/DioXy-8888" target="_blank">DPM</a>
         </div>
-        <div class="rank lol">Diamond II</div>
-        <a class="profile-link" href="https://dpm.lol/DioXy-8888" target="_blank">DPM Profile →</a>
-    </div>
 
-    <div class="card">
-        <div class="game-header">
-            <img src="teamfight-tactics-logo-png_seeklogo-487286.png" class="game-logo">
-            <div class="game-name">Teamfight Tactics</div>
+        <div class="card">
+            <img src="teamfight-tactics-logo-png_seeklogo-487286.png">
+            <div class="name">TFT</div>
+            <div class="rank tft">Master</div>
         </div>
-        <div class="rank tft">Master 93 LP</div>
-        <a class="profile-link" href="https://tactics.tools/player/euw/DioXy/8888" target="_blank">Tactics.tools →</a>
-    </div>
 
-    <div class="card">
-        <div class="game-header">
-            <img src="Valorant_logo_-_pink_color_version.svg.png" class="game-logo">
-            <div class="game-name">Valorant</div>
+        <div class="card">
+            <img src="Valorant_logo_-_pink_color_version.svg.png">
+            <div class="name">Valorant</div>
+            <div class="rank valorant">Ascendant I</div>
         </div>
-        <div class="rank valorant">Ascendant I</div>
-        <a class="profile-link" href="https://tracker.gg/valorant/profile/riot/DioXy%238888/overview?platform=pc&playlist=competitive&season=ce2783e8-44fc-dd48-3da3-33b5ba6c4a22" target="_blank">Tracker.gg →</a>
-    </div>
 
-    <div class="card">
-        <div class="game-header">
-            <img src="Pokémon_Champions_Logo.webp" class="game-logo">
-            <div class="game-name">Pokémon Champions</div>
+        <div class="card">
+            <img src="Clash_Royale_Logo.png">
+            <div class="name">Clash Royale</div>
+            <div class="rank cr">Champion</div>
         </div>
-        <div class="rank pokemon">Master Ball · 1800 Elo</div>
-    </div>
 
-    <div class="card">
-        <div class="game-header">
-            <img src="Splatoon_Logo.png" class="game-logo">
-            <div class="game-name">Splatoon</div>
+        <div class="card">
+            <img src="Fortnite_F_lettermark_logo.png">
+            <div class="name">Fortnite</div>
+            <div class="rank fn">Unreal</div>
         </div>
-        <div class="rank splatoon">S+ in all modes</div>
-    </div>
 
-    <div class="card">
-        <div class="game-header">
-            <img src="Clash_Royale_Logo.png" class="game-logo">
-            <div class="game-name">Clash Royale</div>
+        <div class="card">
+            <img src="Splatoon_Logo.png">
+            <div class="name">Splatoon</div>
+            <div class="rank splatoon">S+</div>
         </div>
-        <div class="rank cr">Champion Suprême · 1628 Elo</div>
-        <a class="profile-link" href="https://royaleapi.com/player/L998YQVQ" target="_blank">RoyaleAPI →</a>
-    </div>
 
-    <div class="card">
-        <div class="game-header">
-            <img src="Fortnite_F_lettermark_logo.png" class="game-logo">
-            <div class="game-name">Fortnite</div>
+        <div class="card">
+            <img src="Pokémon_Champions_Logo.webp">
+            <div class="name">Pokémon</div>
+            <div class="rank pokemon">1800 Elo</div>
         </div>
-        <div class="rank fn">Unreal</div>
+
     </div>
 
 </div>
-
-<div class="accounts">
-
-    <h2>Accounts</h2>
-
-    <div class="account">
-        <img src="Riot_Games_logo_icon.png" class="account-logo">
-        <div class="label">Riot</div>
-        <div>DioXy#8888</div>
-    </div>
-
-    <div class="account">
-        <img src="Epic_Games_logo.svg.png" class="account-logo">
-        <div class="label">Epic</div>
-        <div>KC DioXy</div>
-    </div>
-
-    <div class="account">
-        <img src="Nintendo-switch-icon.png" class="account-logo">
-        <div class="label">Nintendo</div>
-        <div>SW-XXXX</div>
-    </div>
-
-</div>
-
-<footer>
-    @DioXy_8 on socials
-</footer>
 
 </body>
 </html>
