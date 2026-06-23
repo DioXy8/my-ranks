@@ -18,6 +18,8 @@ body{
     width:100%;
     max-width:900px;
     margin:0 auto;
+
+    animation:fadeUp .6s ease-out;
 }
 
 /* HEADER */
@@ -91,14 +93,17 @@ h1{
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+
+    overflow:hidden;
 }
 
+/* HOVER GLOBAL */
 .card:hover{
     transform:translateY(-6px) scale(1.01);
     border-color:rgba(255,255,255,0.25);
 }
 
-/* TEXT INSIDE CARD (si tu en remets plus tard) */
+/* TEXT (si besoin plus tard) */
 .title{
     font-size:1.6rem;
     font-weight:700;
@@ -110,24 +115,24 @@ h1{
     color:#a1a1aa;
 }
 
-/* COLORS */
+/* COLORS PREMIUM (plus subtil) */
 .youtube:hover{
-    box-shadow:0 15px 40px rgba(255,0,0,0.2);
+    box-shadow:0 20px 60px rgba(255,0,0,0.15);
 }
 
 .twitch:hover{
-    box-shadow:0 15px 40px rgba(145,70,255,0.2);
+    box-shadow:0 20px 60px rgba(145,70,255,0.15);
 }
 
 .twitter:hover{
-    box-shadow:0 15px 40px rgba(255,255,255,0.08);
+    box-shadow:0 20px 60px rgba(255,255,255,0.06);
 }
 
 .ranks:hover{
-    box-shadow:0 15px 40px rgba(37,99,235,0.25);
+    box-shadow:0 20px 60px rgba(37,99,235,0.18);
 }
 
-/* FOOTER (si tu ajoutes) */
+/* FOOTER */
 .footer{
     text-align:center;
     margin-top:60px;
@@ -135,17 +140,7 @@ h1{
     font-size:0.9rem;
 }
 
-/* MOBILE */
-@media(max-width:700px){
-    .grid{
-        grid-template-columns:1fr;
-    }
-
-    h1{
-        font-size:2.8rem;
-    }
-}
-
+/* ANIMATION */
 @keyframes fadeUp {
     from{
         opacity:0;
@@ -157,6 +152,13 @@ h1{
     }
 }
 
-.container{
-    animation:fadeUp .6s ease-out;
+/* MOBILE */
+@media(max-width:700px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:2.8rem;
+    }
 }
