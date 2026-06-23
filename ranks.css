@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter, sans-serif;
+    background:#050814;
+    color:white;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/* container */
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+/* back button */
+.back{
+    display:inline-block;
+    margin-bottom:25px;
+    color:#94a3b8;
+    text-decoration:none;
+    font-size:0.95rem;
+    transition:.2s;
+}
+
+.back:hover{
+    color:white;
+}
+
+/* title */
+h1{
+    text-align:center;
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:40px;
+    letter-spacing:-1px;
+}
+
+/* grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+/* card */
+.card{
+    background:rgba(30,41,59,.85);
+    border:1px solid #263244;
+    border-radius:18px;
+
+    padding:30px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    gap:12px;
+
+    transition:.25s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#3b82f6;
+}
+
+/* logos */
+img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+}
+
+/* game name */
+.name{
+    font-weight:600;
+    font-size:1rem;
+    color:#e2e8f0;
+}
+
+/* rank */
+.rank{
+    font-size:1.7rem;
+    font-weight:800;
+}
+
+/* colors */
+.lol{color:#60a5fa;}
+.tft{color:#c084fc;}
+.valorant{color:#22c55e;}
+.pokemon{color:#facc15;}
+.splatoon{color:#38bdf8;}
+.cr{color:#fb923c;}
+.fn{color:#ef4444;}
+
+/* link (optionnel si tu en remets) */
+a{
+    color:#94a3b8;
+    text-decoration:none;
+    font-size:.9rem;
+}
+
+a:hover{
+    color:white;
+}
+
+/* responsive */
+@media(max-width:700px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:2.4rem;
+    }
+}
